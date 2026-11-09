@@ -1,8 +1,9 @@
 name: Common Continuous Integration tasks
 
-on:
-  workflow_call:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_call:
+# 
 permissions: {}
 
 jobs:

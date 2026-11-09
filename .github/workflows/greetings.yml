@@ -1,11 +1,12 @@
 name: Greetings
 
-on:
-  issues:
-    types: [opened]
-  pull_request:
-    branches: [main]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issues:
+#     types: [opened]
+#   pull_request:
+#     branches: [main]
+# 
 permissions: {}
 
 jobs:

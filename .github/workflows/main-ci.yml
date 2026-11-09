@@ -1,15 +1,16 @@
 name: Internal - Main - Continuous Integration
 
-on:
-  push:
-    branches: [main]
-    tags: ["*"]
-
-  workflow_dispatch:
-
-  schedule:
-    - cron: "25 8 * * 1"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [main]
+#     tags: ["*"]
+# 
+#   workflow_dispatch:
+# 
+#   schedule:
+#     - cron: "25 8 * * 1"
+# 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true

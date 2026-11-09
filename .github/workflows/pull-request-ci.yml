@@ -1,10 +1,11 @@
 name: Pull request - Continuous Integration
 
-on:
-  merge_group:
-  pull_request:
-    branches: [main]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   merge_group:
+#   pull_request:
+#     branches: [main]
+# 
 permissions: {}
 
 concurrency:
